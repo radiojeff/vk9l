@@ -5,57 +5,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <style type="text/css">
-
-.bpadd {
-  padding-bottom:10px;
-}
-    
-.bp-th {
-   font-weight: bold;
-}
-
-.bp-bt {
-   border-top:2px solid black;
-}
-
-.bp-bl {
-   border-left:1px solid black;
-}
-.bp-w {
-   width:64px;
-}
-
-.bp-br {
-   border-right:1px solid black;
-}
-
-.bp-bb {
-   border-bottom:2px solid black;
-}
-
+.bpadd { padding-bottom:10px; }
+.bp-th { font-weight: bold; }
+.bp-bt { border-top:2px solid black; }
+.bp-bl { border-left:1px solid black; }
+.bp-w { width:64px; }
+.bp-br { border-right:1px solid black; }
+.bp-bb { border-bottom:2px solid black; }
 .wo {
-   width:64px;height:48px;
+  width:64px;height:48px;
   background-repeat:no-repeat;
   background:url(img/worked.png);
 }
-
 .nw  {
   width:64px;height:48px;
   background-repeat:no-repeat;
   background:url(img/notworked.png);
-  xxbackground: #AAA;
 }
 
-body
-{ 
+body { 
    width:800px;
    font-family: 'Sometype Mono';
-   font-weight:bold;
    font-size:16px;
 }
 
-.fade-in-bg-nav a
-{
+.fade-in-bg-nav a {
     color: #00A;
     background-color: #DDF;
     text-decoration: none;
@@ -63,43 +37,30 @@ body
     transition: background-color 0.5s ease-in-out;
 }
 
-.fade-in-bg-nav li
-{
+.fade-in-bg-nav li {
     display: inline-block;
     margin: 0 5px;
 }
 
-.fade-in-bg-nav a:hover
-{
+.fade-in-bg-nav a:hover {
     background-color: #00A;
     color: #FFF;
 }
-
 </style>
-
-
 <script>
    var topics = ["home", "spons", "about", "glance", "metrics", "priv", "goals", "qrv", "bandplan", "qsl", "contact"];
 
    var vis_id = null;
 
-   function choose(tid)
-   {
-        //if (vis_id === tid) {
-        //   vis_id = null;
-        //}
-        //else {
-            vis_id = tid;
-        //}
+   function choose(tid) {
+        vis_id = tid;
         invalidate();
    }
 
-   function invalidate()
-   {
+   function invalidate() {
        var i = 0;
        var tid = null;
        var elem = null;
-
        for(i = 0; i < topics.length; i++)  {
            tid = topics[i];
            elem = document.getElementById(tid);
@@ -113,11 +74,8 @@ body
        }
    }
 </script>
-
 </head>
-
 <body>
-
 <h1>2024 Lord Howe Island DX'pedition</h1>
 <p>
 <div style="float: left;">
@@ -132,11 +90,11 @@ body
 <table style="width:800px;" border=0>
 <tr>
 <td class="bpadd" ><a onclick="choose('home');"class="fade-in-bg-nav">HOME</a></td>
+<td class="bpadd"><a onclick="choose('goals');"class="fade-in-bg-nav">GOALS</a></td>
+<td class="bpadd"><a onclick="choose('spons');"class="fade-in-bg-nav">SPONSORS</a></td>
 <td class="bpadd"><a onclick="choose('glance');"class="fade-in-bg-nav">AT A GLANCE</a></td>
 <td class="bpadd"><a onclick="choose('qrv');"class="fade-in-bg-nav">QRV</a></td>
-<td class="bpadd"><a onclick="choose('spons');"class="fade-in-bg-nav">SPONSORS</a></td>
 
-<td class="bpadd"><a onclick="choose('goals');"class="fade-in-bg-nav">GOALS</a></td>
 </tr>
 <tr>
 <td class="bpadd"><a onclick="choose('bandplan');"class="fade-in-bg-nav">BAND PLAN</a></td>
@@ -155,41 +113,36 @@ body
 <div id="bodycontainer">
 
 <div id="home" style="display:block;">
-
-<h2>It's Happening</h2>
+<h2>Lord Howe Island / July 2024</h2>
 
 A DX'pedition is in final planning stages for QRV on 
 <a href="https://en.wikipedia.org/wiki/Lord_Howe_Island">Lord Howe Island.</a>
 <p>
 
 <h2>Online Resources</h2>
-
 <ul>
-<li> ClubLog system is being setup.
-<li> QRZ.com page is being setup.
-<li> This site (what you are reading now) is always the best source
-of information PRIOR TO QRV.
+<li> <a target="top" href="https://clublog.org">ClubLog</a>
+<li> <a target="top" href="https://www.qrz.com/db/VK9L/W7BRS">QRZ.com</a>
+<li> <a target="top" 
+        href="https://clublog.org/make_donation.php?call=VK9L/W7BRS">Donate</a>
 </ul>
-
 </div>
 
 <div id="priv" style="display:none;">
 <h2>Privacy Policy</h2>
-In short, the TL;DR; version is this:  We do not have, collect or use
-any personal information about you, period. Simply, we do not want it,
-we do not need it and we never will.  We can not sell it, we never had it.
-We cannot analyze it, we never had it.  It does not exist on this site. 
+<b>TERMS</b><br>
 <p>
-Period.
-<p>
-
 The VK9L/W7BRS 2024 DXpedition team respects the privacy of every visitor to this website. This policy explains our online data and information policy. 
 This Policy may be changed or updated at any time. 
 By visiting this web site you agree to the terms of this policy.
 <p>
-<i>In plain terms:  We value privacy and we don't want to violate yours.  We might change this policy if we find flaws.  By visiting the site, you agree to the terms set forth about privacy.</i>
+<b>TL;DR;</b><br>
+We do not have or collect or use any personal information about you, period. 
 <p>
-
+<i>In plain terms:  We value privacy and we don't want to violate yours.  
+We might change this policy if we find flaws.  
+By visiting the site, you agree to these terms set forth about privacy.</i>
+<p>
 <h3>Data Collection</h3>
 This web site does not collect personal information.  It is a web
 site so it records internet-addresses of visitors.   There is no need
@@ -199,7 +152,6 @@ by law-enforcement agencies or other regulations.
 <i>In plain terms: We don't collect personal information nor would we want
 to keep it.</i>
 <p>
-
 <h3>Financial Donation</h3>
 If you do make a financial donation, it's through PayPal.  This site
 has absolutely no connection with PayPal.  There is no link to PayPal from
@@ -207,35 +159,18 @@ this site.
 <p>
 <i>In plain terms:  There is no intersection between this site and PayPal.</i>
 <p>
-
 <h3>Cookies</h3>
-
-What is a ``Cookie'' - its real name is a bit more complicated, but suffice
-to say, the world wide web is absolutely worthless without Cookies.  It
-is a really long story why this the case.  Cookies get a bad-rap because
-a lot of web companies spoiled what was a good thing for purposes to
-violate your privacy.  <b>We do not use Cookies</b>  We have better
-things to do.
+<b>We do not use Cookies</b>  We have better things to do.
 <p>
-Having said that -- this site <i>does not, never will, and has no interest
-in <b>sending a HTTP data item a.k.a. A Cookie to your web client.</b></i>
-<p>
-
 <i>In plain terms:  We don't do cookies, we have no need for them.</i>
-
 <h3>What about Credit Card Information?</h3>
-
 Short answer: You cannot use your credit-card here.  
 <p>
 <i>In plain terms: Your credit card cannot be used here.</i>
-
 <h3>Is My Information Secure?</h3>
-
 <i>In plain terms:  <b>Your information is secure as you secure it because
 we do not collect your personal information</b></i>
-
 <h3>How is your information used?</h3>
-
 Your information is not used because we don't have your information.
 <p>
 A web site (server) records each and every visit to each and every page.
@@ -246,10 +181,7 @@ users are coming from.
 IP addresses (despite whatever you read in news papers, or anywhere
 else) is not, repeat <b>NOT</b> personal information.
 <p>
-<i>In plain terms:  We don't collect personal information.  We don't need
-it, we never did .. frankly we don't want it. Don't send it.   But,
-it's easy to not send it because this site doesn't have any means
-to collect it from you.</i>
+<i>In plain terms:  We don't collect personal information. </i>
 <p>
 </div>
 <div id="glance" style="display:none;">
@@ -304,12 +236,36 @@ A Visit to Lord Howe Island by Alfred T. Corrie (1878)</a>
 <li> <a target="top" href="https://www.abebooks.com/9780646454191/Lord-Howe-Island-Rising-Nichols-0646454196/plp">Lord Howe Rising by Daphne Nichols</a>
 </ul>
 
+<h2>The French</h2>
+
+The interesting facts about how Lord Howe was discovered:
+<p>
+
+<blockquote style="width:480px">It was discovered by Lieut. Henry Ball, then in command
+of his Majesty's ship <i>Supply</i>, on the 17th of February, 1788,
+while on a voyage to Norfolk Island from Port Jackson (New South
+Wales). He named the island after the hero of the ``glorious 1st of June,''
+the Right Hon. Lord Howe. -- ``A Visit to Lord Howe Island,'' by
+Alfred T. Corrie, Proceedings of the Royal Geographical Society
+of London, Vol 22, No 2 (1877-1878), pp 136-143.</blockquote>
+<p>
+<blockquote style="width:480px">
+En route, almost mid-point
+between Sydney and Norfolk Island, Lt. Ball discovered and named Lord Howe Island
+on 17 February, 61 returning on 13 March 1788 to claim possession to prevent
+French occupation. The two ships of the La Perouse expedition had landed at
+Botany Bay only two days after the First Fleet and the British officers would have
+been worried that after leaving the NSW mainland, La Perouse might happen upon
+Lord Howe Island and claim it for France. --
+Excerpt from ``The Last Paradise,'' from MUSEcape Pty Ltd, 2012</blockquote>
 </div>
 <div id="metrics" style="display:none">
 
 
 <h2>Weather Forecast</h2>
-Weather: <a href="https://www.google.com/search?q=weather+forecast+for+Lord+Howe+Island">Forecast - Lord Howe Island - VK9L</a>
+Weather: <a target="top"
+      href="http://www.bom.gov.au/nsw/forecasts/lordhowe.shtml">
+Forecast - Lord Howe Island - VK9L</a>
 <p>
 <h2>Sunrise and Sunset</h2>
 Computed for the Lat/Long at Lord Howe Island the dates
@@ -426,17 +382,11 @@ AF - Africa, JA Japan, VK - Australia
 <li> To experience the adventure of being on site relying on
      sound engineering judgement to setup and operate all
      common modes on as many HF bands as antenna permit (CW, SSB, FT-8)
-     on 80 meters through 10 meters.</li>
-<li> To engage with the local population and learn stories, history
-     and document and photograph the island with an effort to bring
-     back to the amateur radio community another perspective about
-     this island, people and history.</li>
-
+     on 40 meters through 10 meters.</li>
 <li> To lay a foundation for not only the Organizer to participate
      with future DX'peditions but also encourage and inspire those
      like the author who have dreamed for years to undertake the
      challenge of going on an adventure.</li>
-
 </ol>
 
 <h3>Note to Amateur Radio DX'ers</h3>
@@ -445,9 +395,6 @@ AF - Africa, JA Japan, VK - Australia
    <li> Expect the CW to be a little slower -- 24-27 w.p.m is the goal.</li>
    <li> Expect hours of operation to be based on limits imposed
         by weather, rest and band conditions.</li>
-   <li> Expect most QSO to be within the region of East Asia, North America 
-        and Europe.  However, South American, African and
-        Oceanic stations will also be worked as conditions allow.</li>
    <li> Bonus: Will overlap on the RSGB IOTA contest (intentional)  
        Contest running as OC-004 in RSGB IOTA for JULY 27 through JULY 28th, 
        2024:  
@@ -469,6 +416,8 @@ self-funded by the Leader, and there is no expectation for
 any support (or sponsors) but -- the offer stands -- any and all
 support (of any kind) will be happily appreciated.
 <p>
+<a target="top" 
+   href="https://clublog.org/make_donation.php?call=VK9L/W7BRS">Donate</a>
 
 </div>
 
@@ -552,50 +501,18 @@ attempted.  Time on each band will be limited.
 <div id="qsl" style="display:none;">
 
 <h2>QSL</h2>
-
-There are two (2) routes for QSL:
-<p>
-
-<ol>
-<li> <b>Paper QSL Cards.</b> 
-
 All of the policies regarding QSL confirmations will be clarified
-before the DX'p is QRV.  So these terms may change prior to 
-leaving.
+before the DX'p is QRV.
 <p>
-
-We like paper cards too.  But paper and printing
-is expensive. We'll still make the cards, but ...
-Use Club Log OQRS and it will cost about $5.00 -- check Club Log.
+Watch this space for:
+<ul>
+<li>Link for OQRS through ClubLog
+<li>ClubLog LiveStream
+<li>QSL Manager
+</ul>
 <p>
-
-<li>Any other scenarios lead to <b>LOTW.</b>   All LOTW uploads will 
-happen after we return (a few days after we unpack and take a breath).
-There is no cost to getting a LOTW confirmation.  
-That's why they made it.  We respect LOTW.
-</ol>
-<p>
-Effort will be made to establish OQRS through Club Log, however
-as a fall-back, QSL should be sent to home-call if needs must.
-<a href="https://www.qrz.com/db/W7BRS"><b>W7BRS</b></a>.
-<p>
-LiveStream will be dependent on Internet access.<p>
-
-Livestream is <i>
-probably as good as knowing for sure you are in the log</i>
-<p>
-But ... 
-if
-we copied your call wrong and YOU didn't correct us (or couldn't hear
-us confirm YOUR call) then there is always a tiny chance the actual log
-is truly wrong.
-<p>
-IF LIVESTREAM IS WRONG:  Contact us to clear up that confusion. 
-Check your log software program to make sure your date and time is 
-in UTC.  Screen shots of log programs, or screen shots of WSJT-X do not
-mean anything to us.
-<p>
-If LiveStream IS CORRECT then  DO NOT email us to confirm the QSO.
+<b>Please understand: Answering email queries during the Expedition
+takes time away from operating.</b>
 <p>
 </div>
 <div id="contact" style="display:none;">
@@ -614,7 +531,7 @@ THANK YOU
 
 
 <hr>
-Revision 1.17<br>
+Revision 1.20<br>
 &copy; Jeff Wandling, W7BRS
 
 </body>
