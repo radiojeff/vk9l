@@ -10,8 +10,10 @@ vk9l-dx-scope:
 	makeglossaries $@
 	xelatex $@
 	xelatex $@
-	cp $@.pdf /var/www/w7brs/vk9l/scope.pdf
-	cp $@.pdf /var/www/w7brs/vk9l/vk9l.pdf
+
+install:
+	cp vk9l-dx-scope.pdf /var/www/w7brs/vk9l/scope.pdf
+	cp vk9l-dx-scope.pdf /var/www/w7brs/vk9l/vk9l.pdf
 
 clean:
 	rm -f $(RESIDUE)
