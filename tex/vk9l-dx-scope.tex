@@ -1,4 +1,5 @@
 \documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
 \usepackage[cm]{fullpage}
 \usepackage{fancyvrb}
 \usepackage[superscript,biblabel]{cite}
@@ -22,7 +23,6 @@
 \usepackage{pifont}% http://ctan.org/pkg/pifont
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
-%% \usepackage{tabularx}
 \usepackage{caption}
 
 \makeglossaries
@@ -39,6 +39,19 @@
 
 \newcommand{\qrz}[1]{{\textbf{\href{http://qrz.com/db/#1}{#1}}}}
 
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\usepackage[%
+title={{About this Document}},
+titlestyle=itshape,
+titlesize=24pt, titlealign=r,
+parstyle=upshape, parsize=10pt,
+parlead=11pt, noclrdblpg,
+nofullpage, topspace=2in
+]{colophon}
+
+
 \author{Jeff Wandling, W7BRS}
 \date{\today}
 \title{Lord Howe Island\\[2mm]
@@ -53,7 +66,7 @@
 \end{minipage}
 \\[1cm]
 Scoping Document for Expedition\\[1mm]
-{\small{Rev 1.25}}\\[2mm]
+{\small{Rev 1.26}}\\[2mm]
 July {20{\textsuperscript{th}}} - August {1\textsuperscript{st}}, 2024\\[1cm]
 }
 
@@ -85,7 +98,7 @@ mentoring me in all areas of DX, contesting and reminding me to keep having fun.
 \item Mark Aaker {\qrz{K6UFO}} for his support and advice and good talks
 over a glass of wine.
 \item Al Rovner, {\qrz{K7AR}} and Bob Norin, {\qrz{W7YAQ}} for their advice and information about Lord Howe Island.
-\item Bob Schmieder, {\qrz{KK7EK}} for his inspiration to follow my {\textit{DX-Aku}}.
+\item Bob Schmieder, {\qrz{KK6EK}} for his inspiration to follow my {\textit{DX-Aku}}.
 \item To the rest of the clubs, foundations and organizations that
 inspire us to chase DX and be the DX, thank you.
 \end{itemize}
@@ -157,7 +170,7 @@ of Australia upon the western edge of the Lord Howe Rise.
 The Rise is a continental ribbon, rifted from eastern 
 Australia during the Crataceous to Paleogene and
 forms a submerged portion of the microcontinent
-Zealandia.\cite{lhi}
+Zealandia.\cite{reflhi}
 \par
 According to geological studies what remains today is a 
 a remnant of an eroded shield volcano that 
@@ -1774,7 +1787,7 @@ More, TBD\ldots
     \includegraphics[scale=0.7]{img/lhi-geol1.PNG}}
 \captionsetup{width=0.8\linewidth}
 \captionof{figure}[Geology of Lord Howe Island]{
-Source of caption\cite{lhi}:
+Source of caption\cite{reflhi}:
 (A) Aerial map of the eastern edge of Australia showing the parallel Cosgrove, Tasmantid and Lord Howe hotspot tracks and border of the microcontinent
 Zealandia, and (B) inset showing the position of LHI. (C) Geological map of LHI, adapted from McDougall et al. (1981), with known sampling locations marked in
 with white diamonds (supplementary table T1). The closely dotted black line extending to the south of Australia marks the predicted extent of the Cosgrove hotspot
@@ -1960,5 +1973,24 @@ Jeff Wandling, W7BRS
 \newpage
 \bibliography{vk9l-dx-scope}{}
 \printindex
+
+\par
+\begin{colophon}
+\begin{flushleft}
+This document was typeset using {\LaTeX} and {\BibTeX} and edited
+in a Unix environment with {\texttt{vi}} by the author.
+\par
+Any maps, photos, and drawings are copyright their respective
+creators.
+\par
+The \href{https://github.com/radiojeff/vk9l}{source code} for this
+document is located on GitHub.  You are free to use the template
+for your own DX'pedition planning or scope documents.
+\par
+Content outline and detail was inspired by both Tom Berson, ND2T
+presentation at Visalia 2023 and by KK6EK,
+Bob Schmieder's book {\textit{DX-Aku}}{\cite{refaku}}. 
+\end{flushleft}
+\end{colophon}
 
 \end{document}
