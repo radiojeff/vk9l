@@ -1,6 +1,6 @@
-# VK9L DX'pedition Scope
+# VK2/W7BRS DX'pedition Scope
 
-Here is the VK9L DX'pedition planning and scope documents.
+Here is the VK2/W7BRS DX'pedition planning and scope documents.
 
 There are two bodies of documents to find.
 
@@ -20,7 +20,7 @@ in July 2024.  This repository is NOT the authoritiative site for
 information regarding the expedition.
 
 Please refer to the page on QRZ and/or the web site 
-[VK9L/W7BRS](http://w7brs.com/vk9l/) for current details.
+[VK2/W7BRS](http://howeania2024.org) for current details.
 
 ## A Scope Document Template
 
